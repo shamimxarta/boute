@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'apps.core.apps.CoreConfig',
     'apps.menu.apps.MenuConfig',
     'apps.cart.apps.CartConfig',
+    'apps.orders.apps.OrdersConfig',
     'apps.reservations.apps.ReservationsConfig',
     'apps.payments.apps.PaymentsConfig',
     'apps.dashboard.apps.DashboardConfig',
@@ -166,4 +167,6 @@ REST_FRAMEWORK = {
     ],
 }
 
+
+AUTH_USER_MODEL = "accounts.User"
 
